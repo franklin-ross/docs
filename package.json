@@ -9,6 +9,7 @@
   "author": "Franklin Ross",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.17"

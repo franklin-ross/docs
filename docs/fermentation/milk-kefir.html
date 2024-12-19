@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="/docs/_site.css" />
     <meta name="description" content="Tips and tricks for making milk kefir" />
   </head>
-  <body class="default-theme">
-    <div class="mx-4 mt-2 flex items-center justify-between">
-      <h1>Milk Kefir</h1>
+  <body class="bg-white transition-all dark:bg-slate-800">
+    <!-- Header -->
+    <div
+      class="prose-slate dark:prose-invert sticky top-0 flex h-16 items-center justify-between px-4 shadow-lg dark:shadow-sm dark:shadow-slate-600"
+    >
+      <h1
+        class="m-0 text-[2.5em] font-extrabold leading-[1.11] text-[var(--tw-prose-headings)]"
+      >
+        Milk Kefir
+      </h1>
       <fieldset
         id="color-scheme-picker"
-        class="size-fit rounded-full border border-slate-200 text-xs dark:border-slate-700"
+        class="size-fit rounded-full border border-[var(--tw-prose-th-borders)] text-xs text-[var(--tw-prose-body)]"
       >
         <label class="colour-scheme-picker">
           <input
@@ -44,8 +51,27 @@
         </label>
       </fieldset>
     </div>
-    <div class="mx-4 mt-2">
-      <p class="mt-2 text-sm">This is a sample HTML file.</p>
+    <!-- Body -->
+    <div class="prose prose-slate dark:prose-invert mx-4">
+      <p>This is a sample HTML file.</p>
+      <section>
+        <h2>FAQ</h2>
+        <details name="faq">
+          <summary>Help, my kefir has split/separated!</summary>
+          <p>
+            That's fine, it's a little over-fermented and acidic but not off.
+            Shake the kefir up to combine it again and strain it as usual.
+            Shaking will increase the pressure (like shaking a bottle of
+            lemonade) so open the container in the sink to avoid explosions.
+          </p>
+          <p>
+            It might taste a bit stronger or more acidic than normal but there's
+            nothing wrong with it. Primary fermentation speeds up in warmer
+            temperatures so you can try keeping it in a cooler part of the house
+            or reducing the fermentation time if you'd rather avoid this.
+          </p>
+        </details>
+      </section>
     </div>
   </body>
 </html>
