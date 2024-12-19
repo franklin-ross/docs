@@ -1,3 +1,40 @@
+/* Set up dark mode based on system preference or UI selection */
+html {
+  --color-scheme: dark;
+  container-name: root;
+  container-type: normal;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    --color-scheme: light;
+  }
+}
+
+html:has(#color-scheme-picker [value="dark"]:checked) {
+  --color-scheme: dark;
+}
+html:has(#color-scheme-picker [value="light"]:checked) {
+  --color-scheme: light;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-slate-500 transition-all dark:bg-slate-800 dark:text-slate-300;
+  }
+
+  h1 {
+    @apply text-2xl text-slate-900 dark:text-slate-200;
+  }
+}
+
+@layer components {
+  .colour-scheme-picker {
+    /* :dark:has(:checked) seems to break when in the HTML but is OK here */
+    @apply inline-flex cursor-pointer select-none rounded-full px-2 py-1 text-center has-[:checked]:bg-slate-200 dark:has-[:checked]:bg-slate-900;
+  }
+}

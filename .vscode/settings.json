@@ -9,7 +9,7 @@
   "editor.trimAutoWhitespace": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "[json][jsonc][javascript][typescript][javascriptreact][typescriptreact][html][handlebars]": {
+  "[json][jsonc][javascript][typescript][javascriptreact][typescriptreact][html][handlebars][css][tailwindcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript][typescript]": {
@@ -40,6 +40,7 @@
     "*.jsx": "${capture}.js",
     "*.tsx": "${capture}.ts",
     "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, .gitignore, .npmignore, tsconfig.json, *.csproj, Directory.Build.*, Directory.Packages.props, appsettings*.json, *.sln, .editorconfig, tailwind.config.js, .eslintrc.js, .prettierrc.js, .prettierrc.json"
-  }
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, .gitignore, .npmignore, tsconfig.json, *.csproj, Directory.Build.*, Directory.Packages.props, appsettings*.json, *.sln, .editorconfig, tailwind.*.js, .eslintrc.js, .prettierrc.js, .prettierrc.json"
+  },
+  "cSpell.words": ["kefir"]
 }

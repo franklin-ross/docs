@@ -5,13 +5,47 @@
     <meta charset="utf-8" />
     <meta name="author" content="Franklin Ross" />
     <link rel="stylesheet" href="/docs/_site.css" />
-    <meta
-      name="description"
-      content="The MDN Web Docs Learning Area aims to provide complete beginners to the Web with all they need to know to get started with developing websites and applications."
-    />
+    <meta name="description" content="Tips and tricks for making milk kefir" />
   </head>
-  <body>
-    <h1>Frank's Documents</h1>
-    <p>This is a sample HTML file.</p>
+  <body class="default-theme">
+    <div class="mx-4 mt-2 flex items-center justify-between">
+      <h1>Milk Kefir</h1>
+      <fieldset
+        id="color-scheme-picker"
+        class="size-fit rounded-full border border-slate-200 text-xs dark:border-slate-700"
+      >
+        <label class="colour-scheme-picker">
+          <input
+            type="radio"
+            name="color-scheme"
+            value="light"
+            class="sr-only"
+          />
+          Light
+        </label>
+        <label class="colour-scheme-picker">
+          <input
+            type="radio"
+            name="color-scheme"
+            value="dark"
+            class="sr-only"
+          />
+          Dark
+        </label>
+        <label class="colour-scheme-picker">
+          <input
+            type="radio"
+            name="color-scheme"
+            value="system"
+            class="sr-only"
+            checked
+          />
+          System
+        </label>
+      </fieldset>
+    </div>
+    <div class="mx-4 mt-2">
+      <p class="mt-2 text-sm">This is a sample HTML file.</p>
+    </div>
   </body>
 </html>
