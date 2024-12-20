@@ -25,6 +25,6 @@ html:has(#color-scheme-picker [value="light"]:checked) {
 @layer components {
   .colour-scheme-picker {
     /* :dark:has(:checked) seems to break when in the HTML but is OK here */
-    @apply inline-flex cursor-pointer select-none rounded-full px-2 py-1 text-center has-[:checked]:bg-[var(--tw-prose-td-borders)];
+    @apply has-[:checked]:bg-prose-border-subtle inline-flex cursor-pointer select-none rounded-full px-2 py-1 text-center;
   }
 }
