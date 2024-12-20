@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Documents I want to maintain and share with people",
   "scripts": {
-    "build": "npx tailwindcss -i ./docs/tailwind.css -o ./docs/_site.css",
-    "watch": "npx tailwindcss -i ./docs/tailwind.css -o ./docs/_site.css --watch"
+    "build": "npx tailwindcss -i ./docs/_tailwind.css -o ./docs/built-styles.css",
+    "watch": "npx tailwindcss -i ./docs/_tailwind.css -o ./docs/built-styles.css --watch"
   },
   "author": "Franklin Ross",
   "license": "UNLICENSED",

@@ -1270,10 +1270,6 @@ video {
   line-height: 1.11;
 }
 
-.text-\[var\(--tw-prose-headings\)\] {
-  color: var(--tw-prose-headings);
-}
-
 .text-prose-body {
   color: var(--tw-prose-body);
 }
